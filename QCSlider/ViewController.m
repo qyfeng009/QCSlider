@@ -23,8 +23,6 @@
     
     QCSlider *qcSlider = [[QCSlider alloc] initWithFrame:CGRectMake(40, 100, 300, 30)];
     [qcSlider addTarget:self action:@selector(qcSlide:) forControlEvents:UIControlEventValueChanged];
-    qcSlider.minimumValue = 0;
-    qcSlider.maximumValue = 255;
     
     qcSlider.trackHeight = 8;
     qcSlider.thumbHeight = 18;
@@ -34,6 +32,10 @@
     qcSlider.thumbCornerRadius = 9;
     
     qcSlider.showThumbShadow = YES;
+    
+    qcSlider.minimumValue = 0;
+    qcSlider.maximumValue = 255;
+    qcSlider.value = 255;
     
     [self.view addSubview:qcSlider];
     

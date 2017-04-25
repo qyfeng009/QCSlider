@@ -21,7 +21,7 @@
  */
 @property(nonatomic) float maximumValue;
 /**
- 当前滑块所在的值
+ 当前滑块所在的值(默认0，如果设置了滑块的thumbWidth宽度属性，则此属性要设置在滑块宽度属性的后边，因为滑块的坐标要根据滑块的宽度来计算, 建议：value值设置在样式之后)
  */
 @property(nonatomic) float value;
 /**

@@ -153,6 +153,9 @@
     self.minimumTrackView.width = _thumbViewCenterX;
     self.maximumTrackView.x = _thumbView.x+_thumbView.width/2;
     self.maximumTrackView.width = self.width - _thumbView.x-_thumbView.width/2;
+    
+    [self serTrackRounds:_trackCornerRadius desView:_minimumTrackView];
+    [self serTrackRounds:_trackCornerRadius desView:_maximumTrackView];
 }
 
 
